@@ -43,7 +43,7 @@ AI destekli ürün araştırması ve öneri platformu. Kullanıcılar doğal dil
 
 ### 1. Projeyi İndirin
 ```bash
-git clone <repository-url>
+git clone <[repository-url](https://github.com/OguzBerkAydin/hackathon_final.git)>
 cd hackathon_final
 ```
 
