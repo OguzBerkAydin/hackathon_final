@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./backend
+    container_name: hackathon_backend
+    ports:
+      - "8801:8801"
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    container_name: hackathon_frontend
+    ports:
+      - "3021:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
